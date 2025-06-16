@@ -62,7 +62,7 @@ class TripStop(Base):
     stop_id = Column(Integer, ForeignKey("stops.id"), index=True)
     sequence = Column(Integer, index=True)
     time = Column(String)
-    __table_args__ = (UniqueConstraint("trip_id", "stop_id", name="uix_trip_stop"),)
+    # unique constraint removed to allow same stop multiple times in a trip
 
 # Scraper config
 BASE_URL = "https://bustimes.org"
