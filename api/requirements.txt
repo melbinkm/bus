@@ -1,7 +1,0 @@
-
-
-flask
-flask-caching
-psycopg2-binary
-requests
-
